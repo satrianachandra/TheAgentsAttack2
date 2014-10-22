@@ -113,6 +113,7 @@ public class SubCoordinator implements Runnable {
             sizeOfThreadPool = Integer.decode(args[2]);
         }
         
+        /*
         Runtime rt = Runtime.instance();
         // Exit the JVM when there are no more containers around
         rt.setCloseVM(true);
@@ -131,6 +132,7 @@ public class SubCoordinator implements Runnable {
         } catch (StaleProxyException ex) {
             Logger.getLogger(SubCoordinator.class.getName()).log(Level.SEVERE, null, ex);
         }
+                */
         
 	int port = Integer.parseInt(args[0]);
         SubCoordinator server = new SubCoordinator(port,sizeOfThreadPool);
